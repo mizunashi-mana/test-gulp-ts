@@ -1,0 +1,21 @@
+{
+  "private": true,
+  "name": "gulp-ts-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "gulp build",
+    "build:correct": "gulp build:correct",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "coffee-script": "^1.10.0",
+    "gulp": "^3.9.1",
+    "gulp-typescript": "^2.13.6",
+    "merge2": "^1.0.2",
+    "typescript": "^1.8.10"
+  }
+}

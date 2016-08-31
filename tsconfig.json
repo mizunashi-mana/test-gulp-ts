@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "outDir": "dist/",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "declaration": true,
+    "noImplicitAny": true,
+    "sourceMap": true,
+    "inlineSources": true,
+    "preserveConstEnums": true,
+    "newLine": "LF"
+  },
+  "files": [
+    "src/bin/app.ts",
+    "src/index.ts",
+    "src/typings.d.ts"
+  ]
+}

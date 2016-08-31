@@ -1,0 +1,5 @@
+/dist/
+
+# for NPM
+npm-debug.log*
+node_modules/
