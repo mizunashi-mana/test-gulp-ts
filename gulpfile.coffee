@@ -4,7 +4,6 @@ ts = require 'gulp-typescript'
 merge = require 'merge2'
 
 tsProject = ts.createProject 'tsconfig.json',
-  sortOutput: true
   typescript: require 'typescript'
 
 gulp.task 'build', ->
@@ -13,11 +12,11 @@ gulp.task 'build', ->
       'src/bin/app.ts'
       'src/illegal.ts'
   ]
-    .pipe ts tsProject
+    .pipe tsProject ts.reporter.defaultReporter()
 
   merge [
-      tsResult.js
-      tsResult.dts
+    tsResult.js
+    tsResult.dts
   ]
     .pipe gulp.dest 'dist'
 
@@ -27,10 +26,10 @@ gulp.task 'build:correct', ->
       'src/bin/app.ts'
       'src/illegal-but-correctgts.ts'
   ]
-    .pipe ts tsProject
-
+    .pipe tsProject ts.reporter.defaultReporter()
+ 
   merge [
-      tsResult.js
-      tsResult.dts
+    tsResult.js
+    tsResult.dts
   ]
     .pipe gulp.dest 'dist'

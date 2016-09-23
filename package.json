@@ -14,8 +14,8 @@
   "devDependencies": {
     "coffee-script": "^1.10.0",
     "gulp": "^3.9.1",
-    "gulp-typescript": "^2.13.6",
+    "gulp-typescript": "^3.0.0",
     "merge2": "^1.0.2",
-    "typescript": "^1.8.10"
+    "typescript": "^2.0.0"
   }
 }
